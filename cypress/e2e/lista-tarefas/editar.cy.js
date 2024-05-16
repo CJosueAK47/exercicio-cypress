@@ -16,5 +16,8 @@ describe('Testes editar um contato', () => {
 
     cy.get('.alterar').click()
 
+    cy.get('.contato').contains('Joao Romao')
+    cy.get('.contato').contains('joao@teste.com')
+    cy.get('.contato').contains('98 94567-3421')
   })
 })
